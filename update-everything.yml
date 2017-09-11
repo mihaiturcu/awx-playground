@@ -2,7 +2,7 @@
 - name: demo playbook
   hosts: localhost
   tasks:
-    - name: install htop
-      apt:
-        name: "htop"  
+    - name: update everything
+      yum:
+        name: "*"  
         state: latest
