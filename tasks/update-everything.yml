@@ -1,0 +1,6 @@
+- hosts: localhost
+  tasks:
+    - name: upgrade all packages
+      apt:
+        name: "*"  
+        state: latest
