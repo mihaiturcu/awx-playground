@@ -1,4 +1,6 @@
-- hosts: localhost
+---
+- name: demo playbook
+  hosts: localhost
   tasks:
     - name: upgrade all packages
       apt:
