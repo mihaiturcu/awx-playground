@@ -2,7 +2,7 @@
 - name: demo playbook
   hosts: localhost
   tasks:
-    - name: upgrade all packages
+    - name: install htop
       apt:
-        name: "*"  
+        name: "htop"  
         state: latest
